@@ -848,8 +848,8 @@ function swapkeyval(json){
         }
     }
 
-    // dump('libkernel');
-    // dump('libSceWebKit2');
+    dump('libkernel');
+    dump('libSceWebKit2');
 
     var rtv1 = p.fcall(window.gadgets["mov rax, rdi"], 0x41414141);
     var pid = p.syscall("getpid");
