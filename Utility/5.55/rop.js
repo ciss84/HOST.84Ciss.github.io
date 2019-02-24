@@ -867,7 +867,7 @@ function swapkeyval(json){
         var s = socket();
         print('socket() returned 0x' + s.toString(16));
 
-        var c = connect(s, "192.168.2.24", 8989);
+        var c = connect(s, "192.168.1.20", 80);
         print('connect() returned 0x' + c.toString(16));
 
         var str_to_write = "Hello From a PS4!\n";
