@@ -1,6 +1,4 @@
-CACHE MANIFEST  
-# 24/12/2019-16:43:59,15 
-
+CACHE MANIFEST 
 index.html
 css\anim.css
 css\custom.css
@@ -52,7 +50,7 @@ payloads\history.html
 payloads\ihrtm.html
 payloads\jkpatch.html
 payloads\kdumper.html
-payloads\LightningModsHEN-1.9 .html
+payloads\lightningmodshen .html
 payloads\linux.html
 payloads\linuxnoedid.html
 payloads\memapi.html
