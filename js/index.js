@@ -12,7 +12,7 @@ var model = {
       selectedIndex: 0,
       active: false,
       icon: 'style',
-      items: [{ title: "HEN 1.9", desc: "Inc: self spawn & usermode printf to klog patches + FTP RW", version: "1.9 by LightningMods", active: false, icon: "", expage: "payloads/LightningMods HEN-1.9 .html" },{ title: "BINLOADER", desc: "Enable only BIN LOADER function on port:9020", version: "1.7 by OpenOrbisTeam", active: false, icon: "send", expage: "payloads/binloader.html" }, { title: "DUMPER", desc: "Dump disc/PSN games to USB: with/without patches, merged/unmerged", version: "1.8 by xVortex", active: false, icon: "archive", expage: "payloads/vtxdump.html"}, { title: "FTP SERVER", desc: "Start an ftp server and connect to your PC to your PS4", version: "1.3 by xVortex", active: false, icon: "wifi", expage: "payloads/vtxftp.html"}]
+      items: [{ title: "HEN 1.9", desc: "Inc: self spawn & usermode printf to klog patches + FTP RW", version: "1.9 by LightningMods", active: false, icon: "", expage: "payloads/lightningmodshen.html" },{ title: "BINLOADER", desc: "Enable only BIN LOADER function on port:9020", version: "1.7 by OpenOrbisTeam", active: false, icon: "send", expage: "payloads/binloader.html" }, { title: "DUMPER", desc: "Dump disc/PSN games to USB: with/without patches, merged/unmerged", version: "1.8 by xVortex", active: false, icon: "archive", expage: "payloads/vtxdump.html"}, { title: "FTP SERVER", desc: "Start an ftp server and connect to your PC to your PS4", version: "1.3 by xVortex", active: false, icon: "wifi", expage: "payloads/vtxftp.html"}]
   },    
 	"HEN 4.74": {
       index: 1,
