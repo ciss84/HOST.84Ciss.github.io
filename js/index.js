@@ -150,8 +150,16 @@ var model = {
       icon: "subscriptions",
       items: [{title: "MP4PLAYER", desc:"Media player for MP4 movies over network", version: "1.0 by DEFAULTDNB", active: false, icon: "airplay", expage: "payloads/playerloader.html" }]
 	},
-	"ABOUT": {
+		"STYLE": {
       index: 17,
+      title: "STYLE",
+      selectedIndex: 0,
+      active: false,
+      icon: "",
+      items: [{title: "X-PROJECT MENU COLOUR CHANGER", desc: "Change the colour of X-Project's menu items and icons", version:"1.0 by DEFAULTDNB", active: false, icon: "", expage: "payloads/ColPicker.html"}, {title: "X-PROJECT MENU AUTO STYLER", desc: "Click to randomly change the colour of X-Project's menu items and icons", version:"1.0 by DEFAULTDNB", active: false, icon: "", expage: "payloads/ColRandom.html"}, {title: "X-PROJECT MENU DEFAULT COLOUR", desc: "Changes the colour of X-Project's menu items back to the default colour", version:"1.0 by DEFAULTDNB", active: false, icon: "", expage: "payloads/ColDefault.html"}]
+	},
+	"ABOUT": {
+      index: 18,
       title: "ABOUT",
       selectedIndex: 0,
       active: false,
@@ -159,7 +167,7 @@ var model = {
       items: [{title: "CREDITS", desc:"Without these people none of this would be possible", version: "1.5 by DEFAULTDNB", active: false, icon: "fingerprint", expage: "payloads/creditsloader.html" }, {title: "DETAILS", desc:"Tell us your suggestions & issues", version: "1.0 by DEFAULTDNB", active: false, icon: "", expage: "payloads/detailsloader.html" },{title: "PAYLOAD STATISTICS", desc:"Logs how many times a payload has been loaded. (VTX HEN/DUMP/FTP only)", version: "0.1 POC by DEFAULTDNB", active: false, icon: "info", expage: "payloads/statsloader.html" }]
     },
 	"★DEBUG": {
-      index: 18,
+      index: 19,
       title: "★DEBUG",
       selectedIndex: 0,
       active: false,
