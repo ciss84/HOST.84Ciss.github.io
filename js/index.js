@@ -8,7 +8,7 @@ var model = {
   columns: {
 	 "QUICK": {
       index: 0,
-      title: "QUICK",
+      title: "★QUICK★",
       selectedIndex: 0,
       active: false,
       icon: 'style',
@@ -16,12 +16,13 @@ var model = {
   },    
   "HEN 5.05": {
       index: 1,
-      title: "HEN 5.05",
+      title: "★HEN 5.05",
       selectedIndex: 0,
       active: false,
       icon: 'gamepad',
       items: [{title: "HEN 2.1.1", desc: "Inc: rest mode fix for phat/slim/pro, 6.70 PSVR spoof, External HDD Format 6.xx Support", version: "2.1.1 by SiSTRo", active: false, icon: "", expage: "payloads/hen211.html" }, {title: "HEN 2.1", desc: "Inc: rest mode fix for phat/slim/pro + 9.00 PSVR spoof", version: "2.1 by SiSTRo", active: false, icon: "", expage: "payloads/hen21.html" },{ title: "HEN 1.9", desc: "Inc: self spawn & usermode printf to klog patches + FTP RW", version: "1.9 by LightningMods", active: false, icon: "", expage: "payloads/lightningmodshen.html" },{ title: "HEN 1.8", desc: "Inc: self spawn & usermode printf to klog patches", version: "1.8 by Zecoxao", active: false, icon: "", expage: "payloads/vtxhen18.html" }, { title: "HEN 1.7", desc: "Runs fake signed content from internal & external storage", version: "1.7 by xVortex", active: false, icon: "lock", expage: "payloads/vtxhen17.html" }, { title: "HEN 1.6", desc: "Runs fake signed content (out dated)", version: "1.6 by xVortex", active: false, icon: "", expage: "payloads/vtxhen16.html" }, {title: "HEN 1.8 + VR", desc: "Enables HEN 1.8 and spoofs 9.00", version: "1.8 mod by Stooged", active: false, icon: "polymer", expage: "payloads/hen18vrmod.html" }, { title: "HEN 1.7 + VR", desc: "Enable VTX HEN 1.7 and VR all in one", version: "1.7 mod by Stooged", active: false, icon: "polymer", expage: "payloads/vtxhenvrmod.html" }, {title: "HEN + SCREENSHOT", desc: "Enable VTX HEN 1.7 with no in app screenshot limitations", version: "1.7 mod by BIORN", active: false, icon: "tab", expage: "payloads/screenshot.html" }, {title: "HEN (LITE)", desc: "Enable VTX HEN 1.7 without the update blocker", version: "1.7 mod by C0d3m4st4", active: false, icon: "loupe", expage: "payloads/vtxhenc0d3mod.html" }, { title: "HEN + AUTH", desc: "Enables VTX HEN 1.7 with AUTH patches", version: "1.7 mod by Björn", active: false, icon: "texture", expage: "payloads/henauth.html" }, { title: "HEN 1.8 + VR + MIRA", desc: "AIO: PSVR homebrew with klog", version: "1.8 by DEFAULTDNB", active: false, icon: "", expage: "payloads/mirahen18vr.html" }, { title: "HEN 1.8 + MIRA", desc: "Run fake signed content. Inc: debug settings, Kernel logging (port 9999/9998)", version: "1.8 by OpenOrbisTeam", active: false, icon: "apps", expage: "payloads/mirahen18.html" }, { title: "HEN 1.7 + MIRA", desc: "Run fake signed content. Inc: debug settings, Kernel logging (port 9999/9998)", version: "1.7 by OpenOrbisTeam", active: false, icon: "apps", expage: "payloads/mirahen.html" }, { title: "HEN 1.7 + BINLOADER + MIRA", desc: "Enable MIRA HEN 1.7 with BINLOADER", version: "1.7 by OpenOrbisTeam", active: false, icon: "input", expage: "payloads/mirabin.html" }]
     },
+
     "BLOCK": {
       index: 2,
       title: "BLOCK",
@@ -39,7 +40,7 @@ var model = {
       items: [{ title: "VRAM1 PSXITARCH LINUX V2", desc:"1GB VRAM + 7GB RAM Linux kernel loader (requires usbstick)", version: "VRAM1 by PSXITA", active: false, icon: "", expage: "payloads/1gblinux.html"}, { title: "VRAM2 PSXITARCH LINUX V2", desc:"2GB VRAM + 6GB RAM Linux kernel loader (requires usbstick)", version: "VRAM2 by PSXITA", active: false, icon: "", expage: "payloads/2gblinux.html"},{ title: "VRAM3 PSXITARCH LINUX V2 (DON'T USE TO INSTALL)", desc:"3GB VRAM + 5GB RAM Linux kernel loader (requires usbstick)", version: "VRAM3 by PSXITA", active: false, icon: "", expage: "payloads/3gblinux.html"},{ title: "PSXITA NOEDID LINUX V2 (VRAM2)", desc:"Set video out to 1080p + unplug PSVR before use (requires usbstick)", version: "NOEDID by PSXITA", active: false, icon: "web", expage: "payloads/linuxnoedid.html"}, { title: "LINUX", desc:"Lightweight Linux kernel loader (requires usbstick)", version: "1.0 by EEPLY", active: false, icon: "camera", expage: "payloads/eeplinux.html"}, { title: "LINUX", desc:"Boots linux kernel from a USB stick", version: "1.0 by Vultra", active: false, icon: "keyboard", expage: "payloads/linux.html"}, { title: "KEXEC", desc:"Kernel loader direct from Orbis OS", version: "1.0 by ValentineBreize", active: false, icon: "widgets", expage: "payloads/kexec.html"}]
     },
     "BACKUP": {
-      index: 3,
+      index: 4,
       title: "BACKUP",
       selectedIndex: 0,
       active: false,
@@ -60,7 +61,7 @@ var model = {
       selectedIndex: 0,
       active: false,
       icon: "settings",
-      items: [{title: "PS4REN", desc:"Remote Play Enabler, simulates IDU mode", version: "1.0 by SiSTRO", active: false, icon: "tablet", expage: "payloads/GTA/PS4REN.html" },{title: "SAVE MOUNTER", desc:"No need for save wizard!", version: "1.4 by Chendochap", active: false, icon: "folder", expage: "payloads/savemounter.html" },{ title: "ORBISAFR", desc:"Application file redirector for game modding", version: "1.0 by TheoryWrong", active: false, icon: "layers", expage: "payloads/orbisafr.html" },{ title: "SYSCALL 9", desc: "Unjail with UART", version: "1.0 by Lightningmods", active: false, icon: "", expage: "payloads/GTA/sys9.html" },{ title: "VR ENABLER", desc:"Enables VR headset even after HEN has been run", version: "1.0 by Stooged", active: false, icon: "visibility", expage: "payloads/vr.html" }, { title: "VTX FTP", desc: "Start an ftp server and connect to your PC to your PS4", version: "1.3 by xVortex", active: false, icon: "wifi", expage: "payloads/vtxftp.html"}, { title: "FTP + FULL R/W", desc:"Starts an ftp server with full R/W on all 16 partitions of your PS4.", version: "1.0 by Lightningmods", active: false, icon: "warning", expage: "payloads/ftprw.html" }, { title: "REACTPSPLUS", desc:"Turn your consoles RTC back to play expired PSPLUS games", version: "2012 edition by Zer0xFF", active: false, icon: "restore", expage: "payloads/react.html" }, { title: "UNREACTPSPLUS", desc:"Turn your consoles RTC back to 2018", version: "2018 edition by Zer0xFF", active: false, icon: "update", expage: "payloads/unreact.html" }, { title: "REACTPSPLUS", desc:"Change your consoles RTC to whatever you want", version: "1.0 by Zer0xFF mod by Leeful", active: false, icon: "timelapse", expage: "payloads/reactloader.html" }]
+      items: [{title: "PS4REN", desc:"Remote Play Enabler, simulates IDU mode", version: "1.0 by SiSTRO", active: false, icon: "tablet", expage: "payloads/GTA/PS4REN.html" },{title: "SAVE MOUNTER", desc:"No need for save wizard!", version: "1.4 by Chendochap", active: false, icon: "folder", expage: "payloads/savemounter.html" },{ title: "ORBISAFR", desc:"Application file redirector for game modding", version: "1.0 by TheoryWrong", active: false, icon: "layers", expage: "payloads/orbisafr.html" },{ title: "SYSCALL 9", desc: "Unjail with UART", version: "1.0 by Lightningmods", active: false, icon: "", expage: "payloads/GTA/sys9.html" },{ title: "VR ENABLER", desc:"Enables VR headset even after HEN has been run", version: "1.0 by Stooged", active: false, icon: "visibility", expage: "payloads/vr.html" }, { title: "VTX FTP", desc: "Start an ftp server and connect to your PC to your PS4", version: "1.3 by xVortex", active: false, icon: "wifi", expage: "payloads/vtxftp.html"}, { title: "FTP + FULL R/W", desc:"Starts an ftp server with full R/W on all 16 partitions of your PS4.", version: "1.0 by Lightningmods", active: false, icon: "warning", expage: "payloads/ftprw.html" }, { title: "REACTPSPLUS", desc:"Turn your consoles RTC back to play expired PSPLUS games", version: "2012 edition by Zer0xFF", active: false, icon: "restore", expage: "payloads/react.html" }, { title: "UNREACTPSPLUS", desc:"Turn your consoles RTC back to 2018", version: "2018 edition by Zer0xFF", active: false, icon: "update", expage: "payloads/unreact.html" }, { title: "REACTPSPLUS", desc:"Change your consoles RTC to whatever you want", version: "1.0 by Zer0xFF mod by Leeful", active: false, icon: "timelapse", expage: "payloads/reactloader.html" },{ title: "★WEBKIT 5.55", desc: "Quickly TEST WEBKIT", version:"BETA by 84Ciss", active: false, icon: "healing", expage: "Utility/5.55/5.55.html"  },{ title: "★PS4 Breacher", desc: "Quickly TEST WEBKIT", version:"BETA by 84Ciss", active: false, icon: "healing", expage: "Utility/test/6.00.html" }]
     },
 	"CHEATS": {
       index: 7,
@@ -101,33 +102,25 @@ var model = {
       active: false,
       icon: "",
       items: [{ title: "BO3 COD:ONLINE", desc:"Play BO3 LAN games online in private servers", version: "1.0 by TheoryWrong", active: false, icon: "language", expage: "payloads/codonline/BO3.html" }]
-	},  		
-	"CACHE": {
+	},
+	 "ARCADE": {
       index: 11,
+      title: "ARCADE",
+      selectedIndex: 0,
+      active: false,
+      icon: "web",
+      items: [{title: "INFINITE MARIO", desc:"Randomized Mario game made in JS", version: "1.0 by Markus Persson mod by DEFAULTDNB", active: false, icon: "IM", expage: "payloads/games/infmario/infmarioloader.html" }, {title: "FLAPPYBIRD", desc:"Classic Flappy Bird made in JS", version: "1.0 by Fatiherikli mod by DEFAULTDNB", active: false, icon: "whatshot", expage: "payloads/games/flappybird/flappyloader.html" }, {title: "SNAKE", desc:"Classic Snake game made in JS", version: "1.0 by Patorjk mod by DEFAULTDNB", active: false, icon: "pages", expage: "payloads/games/snake/snakeloader.html" }]
+	}, 		
+	"CACHE": {
+      index: 12,
       title: "CACHE",
       selectedIndex: 0,
       active: false,
       icon: "copyright",
       items: [{title: "X-PROJECT HOST CACHE", desc:"Cache X-Project to your web browser for offline use", version: "1.0 by Al-Azif", active: false, icon: "", expage: "payloads/xmbcache.html" }, { title: "USB CACHE INSTALL", desc:"Installs an ApplicationCache.db from USB for offline use", version: "10.0 by Stooged", active: false, icon: "beenhere", expage: "payloads/usbcacheinstall.html" }, { title: "CACHE INSTALL", desc:"Installs an ApplicationCache.db for offline use", version: "10.0 by Stooged", active: false, icon: "book", expage: "payloads/cacheinstall.html" }, { title: "APPLICATION CACHE", desc:"Installs an ApplicationCache.db that is a modified version of Al-Azif's exploit host", version: "2.0 by Hotdogwithmustard", active: false, icon: "loyalty", expage: "payloads/applicationcache.html" }, { title: "HISTORY BLOCKER", desc:"Toggle auto loading the last page used in webbrowser", version: "2.0 by Stooged", active: false, icon: "bookmarks", expage: "payloads/history.html" }]
 	},
-	"ARCADE": {
-      index: 12,
-      title: "ARCADE",
-      selectedIndex: 0,
-      active: false,
-      icon: "web",
-      items: [{title: "INFINITE MARIO", desc:"Randomized Mario game made in JS", version: "1.0 by Markus Persson mod by DEFAULTDNB", active: false, icon: "IM", expage: "payloads/games/infmario/infmarioloader.html" }, {title: "FLAPPYBIRD", desc:"Classic Flappy Bird made in JS", version: "1.0 by Fatiherikli mod by DEFAULTDNB", active: false, icon: "whatshot", expage: "payloads/games/flappybird/flappyloader.html" }, {title: "SNAKE", desc:"Classic Snake game made in JS", version: "1.0 by Patorjk mod by DEFAULTDNB", active: false, icon: "pages", expage: "payloads/games/snake/snakeloader.html" }]
-	},
-	  "★WebKit": {
-      index: 13,
-      title: "★WebKit",
-      selectedIndex: 0,
-      active: false,
-      icon: "help",
-      items: [{ title: "★WEBKIT 5.55", desc: "Quickly TEST WEBKIT", version:"BETA by 84Ciss", active: false, icon: "healing", expage: "Utility/5.55/5.55.html"  },{ title: "★PS4 Breacher", desc: "Quickly TEST WEBKIT", version:"BETA by 84Ciss", active: false, icon: "healing", expage: "Utility/test/6.00.html" }]
-	},
   	"MEDIA": {
-      index: 14,
+      index: 13,
       title: "MEDIA",
       selectedIndex: 0,
       active: false,
@@ -135,7 +128,7 @@ var model = {
       items: [{title: "MP4PLAYER", desc:"Media player for MP4 movies over network", version: "1.0 by DEFAULTDNB", active: false, icon: "airplay", expage: "payloads/playerloader.html" }]
 	},
 	"ABOUT": {
-      index: 15,
+      index: 14,
       title: "ABOUT",
       selectedIndex: 0,
       active: false,
@@ -143,7 +136,7 @@ var model = {
       items: [{title: "CREDITS", desc:"Without these people none of this would be possible", version: "1.5 by DEFAULTDNB", active: false, icon: "fingerprint", expage: "payloads/creditsloader.html" }, {title: "DETAILS", desc:"Tell us your suggestions & issues", version: "1.0 by DEFAULTDNB", active: false, icon: "", expage: "payloads/detailsloader.html" },{title: "PAYLOAD STATISTICS", desc:"Logs how many times a payload has been loaded. (VTX HEN/DUMP/FTP only)", version: "0.1 POC by DEFAULTDNB", active: false, icon: "info", expage: "payloads/statsloader.html" }]
     },
 	"★DEBUG": {
-      index: 16,
+      index: 15,
       title: "★DEBUG",
       selectedIndex: 0,
       active: false,
