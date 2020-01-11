@@ -306,7 +306,7 @@ window.onkeyup = function(e) {
    } else if (key  == 40) {
    xmbVue.handleKey('y', 1);
    } else if (key == 116) {
-   window.open("payloads/hen18vrmod.html", "content");
+   window.open("payloads/hen19.html", "content");
    } else if (key == 117) {
    window.open("payloads/ftprw.html", "content");
    }
