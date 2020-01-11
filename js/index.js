@@ -60,7 +60,7 @@ var model = {
       selectedIndex: 0,
       active: false,
       icon: "home",
-      items: [{title: "PS4FwSpoof", desc:"Spoof your fw", version: "1.0 by Leeful", active: false, icon: "whatshot", expage: "payloads/fwspoof.html" },{title: "fan_control_505", desc:"control your Fan.", version: "1.0 ", active: false, icon: "whatshot", expage: "payloads/fancontrol505.html" },{title: "AVATAR DUMPER", desc:"Dumps avatar files from user profile. Requires exFAT formatted USB.", version: "1.0 by Red-J", active: false, icon: "contacts", expage: "payloads/avadump.html" },{title: "AVATAR INJECTOR", desc:"Injects avatar files to user profile. Requires files on exFAT formatted USB.", version: "1.0 by Red-J", active: false, icon: "portrait", expage: "payloads/avainject.html" },{title: "AUTH INFO DUMPER", desc:"Dumps auth_info.log. Requires exFAT formatted USB.", version: "1.0 by Stooged", active: false, icon: "details", expage: "payloads/authdump.html" }, { title: "EVERSION", desc:"Dumps kernel to USB. Works on 4.05/4.55/4.74/5.01/5.05 OFW", version: "1.4 by CelesteBlue", active: false, icon: "memory", expage: "payloads/everkdump.html" }, { title: "KERNEL DUMPER", desc:"Dumps your kernel to USB", version: "2.0 by Stooged", active: false, icon: "work", expage: "payloads/kdumper.html" }, { title: "FS DUMPER", desc:"Dumps your consoles file system to USB", version: "1.0 by Stooged", active: false, icon: "pageview", expage: "payloads/fsdumper.html" }, { title: "MIRA", desc: "Enable only MIRA Kernel Logging (port 9999/9998)", version: "1.0 by OpenOrbisTeam", active: false, icon: "nfc", expage: "payloads/mira.html" }, { title: "BINLOADER", desc: "Enable only BIN LOADER function on port:9020", version: "1.0 by OpenOrbisTeam", active: false, icon: "send", expage: "payloads/binloader.html" }]
+      items: [{title: "PS4FwSpoof", desc:"Spoof your fw", version: "1.0 by Leeful", active: false, icon: "whatshot", expage: "payloads/fwspoof.html" },{title: "fan_control_505", desc:"control your Fan.", version: "1.0 ", active: false, icon: "whatshot", expage: "payloads/fancontrol505.html" },{ title: "HOST PKG", desc:"RPI-GUI install pkgs to your web browser for offline use", version: "WEB GUI by Sc0rpion 1.0 ", active: false, icon: "weekend", expage: "Utility/rpigui/RPILOADER.html" },{title: "AVATAR DUMPER", desc:"Dumps avatar files from user profile. Requires exFAT formatted USB.", version: "1.0 by Red-J", active: false, icon: "contacts", expage: "payloads/avadump.html" },{title: "AVATAR INJECTOR", desc:"Injects avatar files to user profile. Requires files on exFAT formatted USB.", version: "1.0 by Red-J", active: false, icon: "portrait", expage: "payloads/avainject.html" },{title: "AUTH INFO DUMPER", desc:"Dumps auth_info.log. Requires exFAT formatted USB.", version: "1.0 by Stooged", active: false, icon: "details", expage: "payloads/authdump.html" }, { title: "EVERSION", desc:"Dumps kernel to USB. Works on 4.05/4.55/4.74/5.01/5.05 OFW", version: "1.4 by CelesteBlue", active: false, icon: "memory", expage: "payloads/everkdump.html" }, { title: "KERNEL DUMPER", desc:"Dumps your kernel to USB", version: "2.0 by Stooged", active: false, icon: "work", expage: "payloads/kdumper.html" }, { title: "FS DUMPER", desc:"Dumps your consoles file system to USB", version: "1.0 by Stooged", active: false, icon: "pageview", expage: "payloads/fsdumper.html" }, { title: "MIRA", desc: "Enable only MIRA Kernel Logging (port 9999/9998)", version: "1.0 by OpenOrbisTeam", active: false, icon: "nfc", expage: "payloads/mira.html" }, { title: "BINLOADER", desc: "Enable only BIN LOADER function on port:9020", version: "1.0 by OpenOrbisTeam", active: false, icon: "send", expage: "payloads/binloader.html" }]
 	},
   "TOOLS": {
       index: 7,
@@ -118,16 +118,8 @@ var model = {
       icon: "copyright",
       items: [{title: "X-PROJECT HOST CACHE", desc:"Cache X-Project to your web browser for offline use", version: "1.0 by Al-Azif", active: false, icon: "", expage: "payloads/xmbcache.html" }, { title: "USB CACHE INSTALL", desc:"Installs an ApplicationCache.db from USB for offline use", version: "10.0 by Stooged", active: false, icon: "beenhere", expage: "payloads/usbcacheinstall.html" }, { title: "CACHE INSTALL", desc:"Installs an ApplicationCache.db for offline use", version: "10.0 by Stooged", active: false, icon: "book", expage: "payloads/cacheinstall.html" }, { title: "APPLICATION CACHE", desc:"Installs an ApplicationCache.db that is a modified version of Al-Azif's exploit host", version: "2.0 by Hotdogwithmustard", active: false, icon: "loyalty", expage: "payloads/applicationcache.html" }, { title: "HISTORY BLOCKER", desc:"Toggle auto loading the last page used in webbrowser", version: "2.0 by Stooged", active: false, icon: "bookmarks", expage: "payloads/history.html" }]
 	},
-	"PKG": {
-      index: 13,
-      title: "INSTALL PKG",
-      selectedIndex: 0,
-      active: false,
-      icon: "weekend",
-      items: [{ title: "HOST PKG", desc:"RPI-GUI install pkgs to your web browser for offline use", version: "WEB GUI by Sc0rpion 1.0 ", active: false, icon: "weekend", expage: "Utility/rpigui/RPILOADER.html" }]
-	},
 	"ARCADE": {
-      index: 14,
+      index: 13,
       title: "ARCADE",
       selectedIndex: 0,
       active: false,
@@ -135,7 +127,7 @@ var model = {
       items: [{title: "INFINITE MARIO", desc:"Randomized Mario game made in JS", version: "1.0 by Markus Persson mod by DEFAULTDNB", active: false, icon: "IM", expage: "payloads/games/infmario/infmarioloader.html" }, {title: "FLAPPYBIRD", desc:"Classic Flappy Bird made in JS", version: "1.0 by Fatiherikli mod by DEFAULTDNB", active: false, icon: "whatshot", expage: "payloads/games/flappybird/flappyloader.html" }, {title: "SNAKE", desc:"Classic Snake game made in JS", version: "1.0 by Patorjk mod by DEFAULTDNB", active: false, icon: "pages", expage: "payloads/games/snake/snakeloader.html" }]
 	},
 	  "★WebKit": {
-      index: 15,
+      index: 14,
       title: "★WebKit",
       selectedIndex: 0,
       active: false,
@@ -143,7 +135,7 @@ var model = {
       items: [{ title: "★WEBKIT 5.55", desc: "Quickly TEST WEBKIT", version:"BETA by 84Ciss", active: false, icon: "healing", expage: "Utility/5.55/5.55.html"  },{ title: "★PS4 Breacher", desc: "Quickly TEST WEBKIT", version:"BETA by 84Ciss", active: false, icon: "healing", expage: "Utility/test/6.00.html" }]
 	},
   	"MEDIA": {
-      index: 16,
+      index: 15,
       title: "MEDIA",
       selectedIndex: 0,
       active: false,
@@ -151,7 +143,7 @@ var model = {
       items: [{title: "MP4PLAYER", desc:"Media player for MP4 movies over network", version: "1.0 by DEFAULTDNB", active: false, icon: "airplay", expage: "payloads/playerloader.html" }]
 	},
 	"ABOUT": {
-      index: 17,
+      index: 16,
       title: "ABOUT",
       selectedIndex: 0,
       active: false,
@@ -159,7 +151,7 @@ var model = {
       items: [{title: "CREDITS", desc:"Without these people none of this would be possible", version: "1.5 by DEFAULTDNB", active: false, icon: "fingerprint", expage: "payloads/creditsloader.html" }, {title: "DETAILS", desc:"Tell us your suggestions & issues", version: "1.0 by DEFAULTDNB", active: false, icon: "", expage: "payloads/detailsloader.html" },{title: "PAYLOAD STATISTICS", desc:"Logs how many times a payload has been loaded. (VTX HEN/DUMP/FTP only)", version: "0.1 POC by DEFAULTDNB", active: false, icon: "info", expage: "payloads/statsloader.html" }]
     },
 	"★DEBUG": {
-      index: 18,
+      index: 17,
       title: "★DEBUG",
       selectedIndex: 0,
       active: false,
