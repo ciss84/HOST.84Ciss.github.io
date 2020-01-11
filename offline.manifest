@@ -1,5 +1,6 @@
 CACHE MANIFEST 
 index.html
+README.md
 trophy.mp4
 css\anim.css
 css\custom.css
@@ -47,6 +48,7 @@ payloads\exploit.css
 payloads\fancontrol505.html
 payloads\fsdumper.html
 payloads\ftprw.html
+payloads\fwspoof.html
 payloads\hen18vrmod.html
 payloads\henauth.html
 payloads\history.html
