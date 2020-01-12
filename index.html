@@ -58,8 +58,8 @@ var appCache = window.applicationCache;
 switch (appCache.status) {
   case appCache.UNCACHED:
 	pop();
-	document.getElementById('Ttitle').innerHTML='WELCOME TO X-PROJECT:';
-	document.getElementById('Tsubtitle').innerHTML='PLEASE CACHE BEFORE USE!';
+	document.getElementById('Ttitle').innerHTML='INSTALLING X-PROJECT:';
+	document.getElementById('Tsubtitle').innerHTML='PLEASE WAIT!';
     cachedxp = "false";
     break;
   default:
@@ -210,7 +210,8 @@ function Populate() {
 	}
 	if (cachedxp === "true") {
 	} else {
-	xmbVue.handleKey('x', 12);
+	xmbVue.handleKey('x', 12); //move to cache column (12)	
+	window.open("payloads/xmbcache.html", "content");
 	}
 	document.getElementById('clock').innerHTML = new Date();
 	document.getElementById('clock').innerHTML = document.getElementById('clock').innerHTML.slice(0,21);
