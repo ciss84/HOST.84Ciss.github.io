@@ -69,7 +69,13 @@ switch (appCache.status) {
 var x = document.getElementsByTagName("UL")[0];
 var payloadcount = ((document.getElementById('xmb-contain').getElementsByTagName('li').length)- 2);
 x.getElementsByTagName("LI")[payloadcount].style.display = "none";
+if (window.applicationCache.status == '0') {cachedxp = "false";} else {cachedxp = "true";}
 
+function DLProgress(e){
+	document.getElementById("ScrOverlay").style.display = "block";
+	Percent = (Math.round(e.loaded / e.total * 100));
+	document.getElementById('cacheUPDtxt').innerHTML = "NEW OFFLINE CACHE DETECTED<br>UPDATING " + Percent + "%";
+  } 
 function DebugMode() {
     if (x.getElementsByTagName("LI")[payloadcount].style.display === "none") {
 	myNum = 15;
@@ -211,8 +217,13 @@ function Populate() {
 	if (cachedxp === "true") {
 	} else {
 	xmbVue.handleKey('x', 12); //move to cache column (12)	
+	window.applicationCache.addEventListener("progress", DLProgress, false);
 	window.open("payloads/xmbcache.html", "content");
 	}
+	window.applicationCache.onupdateready = function (e){window.location.reload();
+	};
+	window.applicationCache.onerror = function (e) {document.getElementById('cacheUPDtxt').innerHTML = "ERROR UPDATING CACHE!!";
+	};
 	document.getElementById('clock').innerHTML = new Date();
 	document.getElementById('clock').innerHTML = document.getElementById('clock').innerHTML.slice(0,21);
 }		
