@@ -12,7 +12,7 @@ var model = {
       selectedIndex: 0,
       active: false,
       icon: 'style',
-      items: [{ title: "HEN 1.9", desc: "Inc: self spawn & usermode printf to klog patches + FTP RW", version: "1.9 by LightningMods", active: false, icon: "", expage: "payloads/lightningmodshen.html" },{ title: "HEN 4.74", desc: "Inc: self spawn & usermode printf to klog patches", version: "by Zecoxao", active: false, icon: "lock", expage: "payloads/PS4Brew4.74.html" },{ title: "BINLOADER", desc: "Enable only BIN LOADER function on port:9020", version: "1.7 by OpenOrbisTeam", active: false, icon: "send", expage: "payloads/binloader.html" }, { title: "DUMPER", desc: "Dump disc/PSN games to USB: with/without patches, merged/unmerged", version: "1.8 by xVortex", active: false, icon: "archive", expage: "payloads/vtxdump.html"}, { title: "FTP SERVER", desc: "Start an ftp server and connect to your PC to your PS4", version: "1.3 by xVortex", active: false, icon: "wifi", expage: "payloads/vtxftp.html"}]
+      items: [{ title: "PS4Brew 5.05", desc: "Inc: self spawn & usermode off homebrew and miraCfw patches", version: "by specterdev", active: false, icon: "lock", expage: "payloads/PS4Brew5.05/PS4Brew5.05.html" },{ title: "PS4Brew 4.74", desc: "Inc: self spawn & usermode printf to klog patches", version: "by Zecoxao", active: false, icon: "lock", expage: "payloads/PS4Brew4.74.html" },{ title: "BINLOADER", desc: "Enable only BIN LOADER function on port:9020", version: "1.7 by OpenOrbisTeam", active: false, icon: "send", expage: "payloads/binloader.html" }, { title: "DUMPER", desc: "Dump disc/PSN games to USB: with/without patches, merged/unmerged", version: "1.8 by xVortex", active: false, icon: "archive", expage: "payloads/vtxdump.html"}, { title: "FTP SERVER", desc: "Start an ftp server and connect to your PC to your PS4", version: "1.3 by xVortex", active: false, icon: "wifi", expage: "payloads/vtxftp.html"}]
   },    
   "HEN 5.05": {
       index: 1,
@@ -283,7 +283,7 @@ window.onkeyup = function(e) {
    } else if (key  == 40) {
    xmbVue.handleKey('y', 1);
    } else if (key == 116) {
-   window.open("payloads/hen19.html", "content");
+   window.open("payloads/PS4Brew5.05/PS4Brew5.05.html", "content");
    } else if (key == 117) {
    window.open("payloads/mirahen18vr.html", "content");
    }
