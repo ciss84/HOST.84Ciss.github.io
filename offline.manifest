@@ -1,6 +1,5 @@
 CACHE MANIFEST 
 index.html
-offl.manifest
 trophy.mp4
 css\anim.css
 css\custom.css
@@ -108,6 +107,7 @@ payloads\vtxhenvrmod.html
 payloads\vtxhenzecomod.html
 payloads\webrte.html
 payloads\xmbcache.html
+payloads\xmbcacheori.html
 payloads\xmbinstaller.html
 payloads\codonline\BO3.css
 payloads\codonline\BO3.html
@@ -245,8 +245,6 @@ payloads\PS4Brew4.74\mira.js
 payloads\PS4Brew4.74\rop.js
 payloads\PS4Brew4.74\syscalls.js
 payloads\PS4Brew4.74\userland.js
-update\xmbcache.html
-update\xmbinstaller.html
 Utility\5.55\5.55.html
 Utility\5.55\555.html
 Utility\5.55\app.js
