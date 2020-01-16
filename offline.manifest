@@ -1,5 +1,6 @@
 CACHE MANIFEST 
 index.html
+README.md
 trophy.mp4
 css\anim.css
 css\custom.css
@@ -70,6 +71,7 @@ payloads\mirabin.html
 payloads\mirahen.html
 payloads\mirahen18.html
 payloads\mirahen18vr.html
+payloads\mirahenspoofer.html
 payloads\orbdbg.html
 payloads\orbisafr.html
 payloads\pkgbackup.html
@@ -239,6 +241,12 @@ payloads\GTA\UCTLL.js
 payloads\player\player.html
 payloads\player\player.jpg
 payloads\player\playerloader.html
+payloads\PS4Brew\expl.js
+payloads\PS4Brew\homebrew.js
+payloads\PS4Brew\mira.js
+payloads\PS4Brew\rop.js
+payloads\PS4Brew\syscalls.js
+payloads\PS4Brew\userland.js
 payloads\PS4Brew4.74\expl.js
 payloads\PS4Brew4.74\homebrew.js
 payloads\PS4Brew4.74\mira.js
