@@ -16,7 +16,7 @@ var model = {
   },    
   "HEN 5.05": {
       index: 1,
-      title: "★HEN 5.05",
+      title: "★HEN 5.05 Spoof 7.02",
       selectedIndex: 0,
       active: false,
       icon: 'gamepad',
