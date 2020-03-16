@@ -1,6 +1,5 @@
 CACHE MANIFEST 
 index.html
-README.md
 trophy.mp4
 css\anim.css
 css\custom.css
@@ -56,6 +55,7 @@ payloads\fwspoof.html
 payloads\hen18vrmod.html
 payloads\hen21.html
 payloads\hen211.html
+payloads\hen212.html
 payloads\hen213.html
 payloads\henauth.html
 payloads\history.html
@@ -149,7 +149,6 @@ payloads\games\infmario\code\levelState.js
 payloads\games\infmario\code\loadingState.js
 payloads\games\infmario\code\loseState.js
 payloads\games\infmario\code\mapState.js
-payloads\games\infmario\code\midi.js
 payloads\games\infmario\code\mushroom.js
 payloads\games\infmario\code\music.js
 payloads\games\infmario\code\notchSprite.js
