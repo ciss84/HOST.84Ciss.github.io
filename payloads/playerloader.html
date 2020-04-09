@@ -6,7 +6,7 @@ body {
 overflow:hidden;
 }
 .button {
-    background-color: deepskyblue;
+	background-color: deepskyblue;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -26,12 +26,15 @@ overflow:hidden;
 
 <body>
 <center>
-<button class="button" onclick="myFunction()">START MP4 PLAYER</button>
+<button class="button" onclick="myFunction()">OPEN MP4 PLAYER</button>
 </center>
 <script>
+setTint = localStorage.xmbcolor;
+document.getElementsByClassName("button")[0].style.backgroundColor = setTint;
 function myFunction() {
     window.open("./player/player.html");
 }
+
 </script>
 </body>
 </html>
