@@ -106,16 +106,14 @@ function Populate() {
 	}
 	var txt = "";
 	txt += "HOST VER : " + "<span style='color:white;' onclick='hide()'>" + xpver + "</span>" + "<br><br>";
-	txt += "<div id=L1BUTTON></div>" + ": Hen 2.1.3" + "<br>";
-	txt += "<div id=L2BUTTON></div>" + ": Hen 2.1.2" + "<br>";
-	txt += "<div id=R1BUTTON></div>" + ": Hen 1.9 FTP" + "<br>";
-	txt += "<div id=R2BUTTON></div>" + ": MiraHEN 2.1.3" + "<br><br>";
-	txt += "USER NAME : "+"<input tabIndex='-1' type='input' id='user' value='user' onmousemove='savename()'>"+"<br>";
-	txt += "PS4 FTP IP : "+"<input tabIndex='-1' type='myip' id='myip' value='0.0.0.0:1337' onmousemove='saveip()'>"+"<br><br>";
-	if (navigator.userAgent.substring(navigator.userAgent.indexOf("5.0 (") + 19, navigator.userAgent.indexOf(") Apple")).includes("9.00")) {txt += "Hen 2.1.3 Enabled : " + "<span style='color:lime'> true </span>" + "<br>";} else {txt += "Hen 2.1.3 Enabled : " + "<span style='color:red'> false </span>" + "<br>";} 
-	if (navigator.userAgent.substring(navigator.userAgent.indexOf("5.0 (") + 19, navigator.userAgent.indexOf(") Apple")).includes("9.00")) {txt += "Hen 2.1.2 Enabled : " + "<span style='color:lime'> true </span>" + "<br>";} else {txt += "Hen 2.1.2 Enabled : " + "<span style='color:red'> false </span>" + "<br>";}
-	if (navigator.userAgent.substring(navigator.userAgent.indexOf("5.0 (") + 19, navigator.userAgent.indexOf(") Apple")).includes("9.00")) {txt += "Hen 1.9 FTP Enabled : " + "<span style='color:lime'> true </span>" + "<br>";} else {txt += "Hen 1.9 FTP Enabled : " + "<span style='color:red'> false </span>" + "<br>";}
-	if (navigator.userAgent.substring(navigator.userAgent.indexOf("5.0 (") + 19, navigator.userAgent.indexOf(") Apple")).includes("9.00")) {txt += "MiraHen 2.1.3 Enabled : " + "<span style='color:lime'> true </span>" + "<br>";} else {txt += "MiraHen 2.1.3 Enabled : " + "<span style='color:red'> false </span>" + "<br>";}txt += "Mira Kernel Logging : " + "<span style='color:red'> n/a </span>" + "<br>";
+	txt += "<div id=L1BUTTON></div>" + ": MiraHEN 2.1.4" + "<br>";
+	txt += "<div id=L2BUTTON></div>" + ": hen 1.9 FTP RW" + "<br>";
+	txt += "<div id=R1BUTTON></div>" + ": Hen 2.2 FTP" + "<br>";
+	txt += "<div id=R2BUTTON></div>" + ": MiraHEN 1.8 + VR" + "<br><br>";
+	txt += "USER NAME : "+"<input tabIndex='-1' type='input' id='user' value='Mugiwara' onmousemove='savename()'>"+"<br>";
+	txt += "PS4 FTP IP : "+"<input tabIndex='-1' type='myip' id='myip' value='192.168.1.34:1337' onmousemove='saveip()'>"+"<br><br>";
+	if (navigator.userAgent.substring(navigator.userAgent.indexOf("5.0 (") + 19, navigator.userAgent.indexOf(") Apple")).includes("7.50")) {txt += "MiraHen Enabled : " + "<span style='color:lime'> true </span>" + "<br>";} else {txt += "MiraHen Enabled : " + "<span style='color:red'> false </span>" + "<br>";}
+  if (navigator.userAgent.substring(navigator.userAgent.indexOf("5.0 (") + 19, navigator.userAgent.indexOf(") Apple")).includes("7.50")) {txt += "Mira Kernel Logging : " + "<span style='color:lime'> true </span>" + "<br>";} else {txt += "Mira Kernel Logging : " + "<span style='color:red'> false </span>" + "<br>";}
 	if (truefw === "spoofed") { txt += "True Firmware : " + "<span style='color:red'>" + truefw + "</span>" + "<br>";} else { txt += "True Firmware : " + "<span style='color:lime'>" + truefw + "</span>" + "<br>";}
 	if (navigator.onLine == false) { txt += "Lan/WiFi Enabled : " + "<span style='color:red'> false </span>" + "<br>";} else { txt += "Lan/WiFi Enabled : " + "<span style='color:lime'> true </span>" + "<br>";}
 	if (navigator.cookieEnabled === false) { txt += "Cookie Tracking : " + "<span style='color:red'> false </span>" + "<br>";} else { txt += "Cookie Tracking : " + "<span style='color:lime'> true </span>" + "<br>";}
@@ -132,12 +130,12 @@ function Populate() {
 	document.getElementById("xmb").getElementsByClassName("material-icons")[payloadcount].style.color = "gold";
 	document.getElementById("xmb").getElementsByClassName("material-icons")[payloadcount-9].style.color = "lime";
 	document.getElementById("user").value = localStorage.getItem("username");
-	document.getElementById("myip").value = localStorage.getItem("userip");	
+	document.getElementById("myip").value = localStorage.getItem("userip");		
 
 	var fw = document.getElementById('ident');
 	fw.innerHTML = ("Firmware " + navigator.userAgent.substring(navigator.userAgent.indexOf("5.0 (") + 19, navigator.userAgent.indexOf(") Apple")) + " detected") ;
-	if (fw.innerHTML.includes("9.00")) {
-	fw.innerHTML = ("9.00 Spoof detected"); 
+	if (fw.innerHTML.includes("7.50")) {
+	fw.innerHTML = ("7.50 Spoof detected");
 	fw.style.color = "yellow";
 	fw.onclick = function(){pop();
 	document.getElementById('Ttitle').innerHTML='NOTIFICATION:';

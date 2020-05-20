@@ -1,6 +1,5 @@
 CACHE MANIFEST 
 index.html
-trophy.mp4
 css\anim.css
 css\custom.css
 css\icons.css
@@ -50,6 +49,7 @@ payloads\dbrestoreUNDO2.html
 payloads\dbsg.bin
 payloads\dbsg.html
 payloads\deathrgh.html
+payloads\debug.html
 payloads\DebugWatch.bin
 payloads\DebugWatch.html
 payloads\details.html
@@ -58,8 +58,8 @@ payloads\discdump.bin
 payloads\discdump.html
 payloads\everkdump.bin
 payloads\everkdump.html
-payloads\exploit.js
 payloads\exploit.css
+payloads\exploit.js
 payloads\fancontrol.html
 payloads\fsdumper.bin
 payloads\fsdumper.html
@@ -122,6 +122,8 @@ payloads\Hen211.html
 payloads\hen212.html
 payloads\Hen213.bin
 payloads\Hen213.html
+payloads\Hen22.bin
+payloads\Hen22.html
 payloads\henauth.bin
 payloads\henauth.html
 payloads\history.bin
@@ -135,6 +137,7 @@ payloads\kdumper.html
 payloads\klogserver.bin
 payloads\klogserver.html
 payloads\klogserverMessage.bin
+payloads\lightningmodshen.html
 payloads\linux1GB.bin
 payloads\linux1GB.html
 payloads\linux2GB.bin
@@ -153,6 +156,10 @@ payloads\memapi.bin
 payloads\memapi.html
 payloads\mira.bin
 payloads\mira.html
+payloads\mira.js
+payloads\mira1.html
+payloads\mira2.bin
+payloads\mira2.html
 payloads\miraHen17.html
 payloads\miraHen17Bin.html
 payloads\miraHen18.html
@@ -169,10 +176,14 @@ payloads\pkgbackup.bin
 payloads\pkgbackup.html
 payloads\PlayEngine.bin
 payloads\PlayEngine.html
+payloads\playerloader.html
 payloads\ps4api.bin
 payloads\ps4api.html
 payloads\ps4apiBisoon.bin
 payloads\ps4apiBisoon.html
+payloads\PS4Brew5.05.html
+payloads\ps4debug15.bin
+payloads\ps4debug15.html
 payloads\PS4ren.bin
 payloads\PS4ren.html
 payloads\pupdec.bin
@@ -220,19 +231,11 @@ payloads\WebRTE.bin
 payloads\WebRTE.html
 payloads\xmbcache.html
 payloads\xmbinstaller.html
-payloads\PS4Brew4.74\expl.js
-payloads\PS4Brew4.74\homebrew.js
-payloads\PS4Brew4.74\mira.js
-payloads\PS4Brew4.74\rop.js
-payloads\PS4Brew4.74\syscalls.js
-payloads\PS4Brew4.74\userland.js
-payloads\PS4Brew5.05\expl.js
-payloads\PS4Brew5.05\homebrew.js
-payloads\PS4Brew5.05\mira.js
-payloads\PS4Brew5.05\rop.js
-payloads\PS4Brew5.05\syscalls.js
-payloads\PS4Brew5.05\userland.js
-payloads\titel\titel.html
+payloads\PS4Brew5.05\exploit.js
+payloads\PS4Brew5.05\kernel.js
+payloads\titel\icon0.png
+payloads\titel\icon1.png
+payloads\titel\index.html
 payloads\titel\jssha256.js
 payloads\titel\main.js
-payloads\titel\index.html
+payloads\titel\titel.html
