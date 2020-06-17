@@ -107,13 +107,13 @@ function Populate() {
 	var txt = "";
 	txt += "HOST VER : " + "<span style='color:white;' onclick='hide()'>" + xpver + "</span>" + "<br><br>";
 	txt += "<div id=L1BUTTON></div>" + ": MiraHEN 2.1.4" + "<br>";
-	txt += "<div id=L2BUTTON></div>" + ": hen 1.9 FTP RW" + "<br>";
+	txt += "<div id=AutoHenInfo><div id=L2BUTTON></div>" + ": MiraHENLoader" + "<br>";
 	txt += "<div id=R1BUTTON></div>" + ": Hen 2.2 FTP" + "<br>";
 	txt += "<div id=R2BUTTON></div>" + ": MiraHEN 1.8 + VR" + "<br><br>";
 	txt += "USER NAME : "+"<input tabIndex='-1' type='input' id='user' value='Mugiwara' onmousemove='savename()'>"+"<br>";
 	txt += "PS4 FTP IP : "+"<input tabIndex='-1' type='myip' id='myip' value='192.168.1.34:1337' onmousemove='saveip()'>"+"<br><br>";
-	if (navigator.userAgent.substring(navigator.userAgent.indexOf("5.0 (") + 19, navigator.userAgent.indexOf(") Apple")).includes("7.50")) {txt += "MiraHen Enabled : " + "<span style='color:lime'> true </span>" + "<br>";} else {txt += "MiraHen Enabled : " + "<span style='color:red'> false </span>" + "<br>";}
-  if (navigator.userAgent.substring(navigator.userAgent.indexOf("5.0 (") + 19, navigator.userAgent.indexOf(") Apple")).includes("7.50")) {txt += "Mira Kernel Logging : " + "<span style='color:lime'> true </span>" + "<br>";} else {txt += "Mira Kernel Logging : " + "<span style='color:red'> false </span>" + "<br>";}
+	if (navigator.userAgent.substring(navigator.userAgent.indexOf("5.0 (") + 19, navigator.userAgent.indexOf(") Apple")).includes("7.51")) {txt += "MiraHen Enabled : " + "<span style='color:lime'> true </span>" + "<br>";} else {txt += "MiraHen Enabled : " + "<span style='color:red'> false </span>" + "<br>";}
+  if (navigator.userAgent.substring(navigator.userAgent.indexOf("5.0 (") + 19, navigator.userAgent.indexOf(") Apple")).includes("7.51")) {txt += "Mira Kernel Logging : " + "<span style='color:lime'> true </span>" + "<br>";} else {txt += "Mira Kernel Logging : " + "<span style='color:red'> false </span>" + "<br>";}
 	if (truefw === "spoofed") { txt += "True Firmware : " + "<span style='color:red'>" + truefw + "</span>" + "<br>";} else { txt += "True Firmware : " + "<span style='color:lime'>" + truefw + "</span>" + "<br>";}
 	if (navigator.onLine == false) { txt += "Lan/WiFi Enabled : " + "<span style='color:red'> false </span>" + "<br>";} else { txt += "Lan/WiFi Enabled : " + "<span style='color:lime'> true </span>" + "<br>";}
 	if (navigator.cookieEnabled === false) { txt += "Cookie Tracking : " + "<span style='color:red'> false </span>" + "<br>";} else { txt += "Cookie Tracking : " + "<span style='color:lime'> true </span>" + "<br>";}
@@ -134,8 +134,8 @@ function Populate() {
 
 	var fw = document.getElementById('ident');
 	fw.innerHTML = ("Firmware " + navigator.userAgent.substring(navigator.userAgent.indexOf("5.0 (") + 19, navigator.userAgent.indexOf(") Apple")) + " detected") ;
-	if (fw.innerHTML.includes("7.50")) {
-	fw.innerHTML = ("7.50 Spoof detected");
+	if (fw.innerHTML.includes("7.51")) {
+	fw.innerHTML = ("7.51 Spoof detected");
 	fw.style.color = "yellow";
 	fw.onclick = function(){pop();
 	document.getElementById('Ttitle').innerHTML='NOTIFICATION:';
@@ -260,17 +260,39 @@ function hideMe() {
     y.style.display = "none";
   }
 }
+if(LS.AutoHEN!='on'){LS.AutoHEN="off";AutoHenInfo.innerHTML=("<div id=L2BUTTON></div>"+"- AutoHen = OFF");}if(LS.AutoHEN=='on'){AutoHenInfo.innerHTML=("<div id=L2BUTTON></div>"+"- AutoHen = ON");}
+function RunAutoHen(){SS.InfoBox=1;SS.ThisIsAutoHen = '1';var x = document.querySelectorAll(".box");var i;for(i = 0; i < x.length; i++){x[i].style.opacity="0";}InfoBox.style.display='block'; Title.style.display='none';
+IBT(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Title'));IBV(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Ver'));IBD(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Desc'));
+Loader.innerHTML='<object type="text/html" data="files/exploit.html" style="width:265px; height:56px;"></object>';}if (UA=="5.05"||UA=="5.07"){HasHenRun="no";}if (UA != "5.05" && UA != "5.07" && LS.AutoHEN == 'on'){AutoHenInfo.innerHTML=("<div id=L2BUTTON></div>"+"- AutoHen = ON - Hen Has Loaded");}
+function LoadAutoHen(){if(LS.IsItCached=="yes"&&HasHenRun=="no"&&LS.AutoHEN=="on"){RunAutoHen();}}window.onload = LoadAutoHen
+window.onkeyup=checkKeyUp;function checkKeyUp(e){e=e||window.event;if(e.keyCode=='117'&&SS.Loaded==null){HideInfo();}
+else if(e.keyCode=='118'&&LS.AutoHEN=="on"&&SS.ThisIsCredits!=1){AutoHenInfo.innerHTML=("<div id=L2BUTTON></div>"+"- AutoHen = OFF");LS.AutoHEN="off";}
+else if(e.keyCode=='118'&&LS.AutoHEN=="off"&&SS.ThisIsCredits!=1){AutoHenInfo.innerHTML=("<div id=L2BUTTON></div>"+"- AutoHen = ON");LS.AutoHEN="on";}}
+
 function pop() {
 	document.getElementById("trophy").play();
 	Tpopup.classList.remove('animation');
 	void Tpopup.offsetWidth;Tpopup.classList.add('animation');
 }
+function HideLoaderBox(){SS.Loaded='1';setTimeout(function(){var x=document.querySelectorAll(".SelectedItem");var i;for(i=0;i<x.length;i++){x[i].className="InfoIcon Icon";}},1500);}LS.CurrentTemp=RC('CurrentTemp');LS.KernEpochDiff=RC('KernEpochDiff');
+  if(LS.AutoHEN!='on'){LS.AutoHEN="off";AutoHenInfo.innerHTML=("<div id=L2BUTTON></div>"+"- AutoHen = OFF");}if(LS.AutoHEN=='on'){AutoHenInfo.innerHTML=("<div id=L2BUTTON></div>"+"- AutoHen = ON");}
+  function RunAutoHen(){SS.InfoBox=1;SS.ThisIsAutoHen = '1';var x = document.querySelectorAll(".box");var i;for(i = 0; i < x.length; i++){x[i].style.opacity="0";}InfoBox.style.display='block'; Title.style.display='none';
+  IBT(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Title'));IBV(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Ver'));IBD(MainMenu.children[SS.ItemNum-1].getAttribute('PL-Desc'));
+  Loader.innerHTML='<object type="text/html" data="files/exploit.html" style="width:265px; height:56px;"></object>';}if (UA=="5.05"||UA=="5.07"){HasHenRun="no";}if (UA != "5.05" && UA != "5.07" && LS.AutoHEN == 'on'){AutoHenInfo.innerHTML=("<div id=L2BUTTON></div>"+"- AutoHen = ON - Hen Has Loaded");}
+  function LoadAutoHen(){if(LS.IsItCached=="yes"&&HasHenRun=="no"&&LS.AutoHEN=="on"){RunAutoHen();}}window.onload = LoadAutoHen
+  window.onkeyup=checkKeyUp;function checkKeyUp(e){e=e||window.event;if(e.keyCode=='117'&&SS.Loaded==null){HideInfo();}
+  else if(e.keyCode=='118'&&LS.AutoHEN=="on"&&SS.ThisIsCredits!=1){AutoHenInfo.innerHTML=("<div id=L2BUTTON></div>"+"- AutoHen = OFF");LS.AutoHEN="off";}
+  else if(e.keyCode=='118'&&LS.AutoHEN=="off"&&SS.ThisIsCredits!=1){AutoHenInfo.innerHTML=("<div id=L2BUTTON></div>"+"- AutoHen = ON");LS.AutoHEN="on";
+  }
+}
+
 function getEnvironmentInfo() {
     var s = ' - ';
     s += navigator.userAgent;
 
     return s;
 }
+
 </script>
 <h3 class="infoz" id="infoz">X-PROJECT LOADING..</h3>
 <h6 class="hide" id="hide" onclick='hideMe()'>&nbsp;&nbsp;&nbsp;HIDE INFO</h6>

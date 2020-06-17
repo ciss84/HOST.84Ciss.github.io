@@ -12,7 +12,7 @@ var model = {
       selectedIndex: 0,
       active: false,
       icon: 'style',
-      items: [{ title:"★Debug_MiraHen 1", desc:"Furst load ps4debug 1.5 payloads", version:"ps4debug 1.5", icon:"lock", expage:"payloads/ps4debug15.html"}, { title: "★MiraHen 2", desc: "Second load miraCfw patches", version: "by specterdev", icon: "lock", expage: "payloads/PS4Brew5.05.html" }, {title:"★FW SPOOF", desc:"Spoof the PS4's Firmware version to anything between 0.00 and 99.99", version:"1.0 by Leeful", icon:"", expage:"payloads/fwspoof.html"}, { title:"★Hen 2.1.4", desc:"Inc: 7.50 PSVR spoof, Debug Trophies Support, Enable UART, Remote Play Enabler", version:"2.1.3 by SiSTRo", icon:"", expage:"payloads/Hen213.html"}, { title: "BINLOADER", desc: "Enable only BIN LOADER function on port:9020", version: "1.7 by OpenOrbisTeam", active: false, icon: "send", expage: "payloads/binloader.html" }, {title:"MIRALOADER", desc:"Enable only ELF LOADER function on port:9021", version:"1.0", icon:"send", expage:"payloads/mira2.html"}, { title: "DUMPER", desc: "Dump disc/PSN games to USB: with/without patches, merged/unmerged", version: "1.8 by xVortex", active: false, icon: "archive", expage: "payloads/vtxdump.html"}]
+      items: [{title:"MIRALOADER", desc:"Enable only ELF LOADER function on port:9021", version:"1.0", icon:"send", expage:"payloads/mira2.html"}, {title:"FTP + FULL R/W", desc:"Starts an ftp server with full R/W on all 16 partitions of your PS4", version:"1.0 by Lightningmods", icon:"warning", expage:"payloads/ftprw.html"}, { title:"★Debug_MiraHen 1", desc:"Furst load ps4debug 1.5 payloads", version:"ps4debug 1.5", icon:"lock", expage:"payloads/ps4debug15.html"}, { title: "★MiraHen 2", desc: "Second load miraCfw patches", version: "by specterdev", icon: "lock", expage: "payloads/PS4Brew5.05.html" }, { title:"★Hen 2.1.4", desc:"Inc: 7.50 PSVR spoof, Debug Trophies Support, Enable UART, Remote Play Enabler", version:"2.1.3 by SiSTRo", icon:"", expage:"payloads/Hen213.html"}, { title: "DUMPER", desc: "Dump disc/PSN games to USB: with/without patches, merged/unmerged", version: "1.8 by xVortex", active: false, icon: "archive", expage: "payloads/vtxdump.html"}, { title: "BINLOADER", desc: "Enable only BIN LOADER function on port:9020", version: "1.7 by OpenOrbisTeam", active: false, icon: "send", expage: "payloads/binloader.html" }]
   },    
   "HEN": {
       index: 1,
@@ -87,7 +87,7 @@ var model = {
       title: "LAN",
       selectedIndex: 0,
       icon: "",
-      items: [{title:"BO3 COD:ONLINE", desc:"Play BO3 LAN games online in private servers", version:"1.0 by TheoryWrong", icon:"language", expage:"payloads/BO3.html"}]
+      items: [{title:"LAN PLAY", desc:"Play LAN PLAY games online in private servers", version:"1.0 by TheoryWrong", icon:"language", expage:"payloads/BO3.html"}]
 	},  
 	"MEDIA": {
       index: 11,
@@ -258,7 +258,7 @@ window.onkeyup = function(e) {
    } else if (key == 116) {
    window.open("payloads/miraHen213.html", "content");
    } else if (key == 118) {
-   window.open("payloads/lightningmodshen.html", "content");
+   window.open("payloads/mira2.html", "content");
    } else if (key == 117) {
    window.open("payloads/miraHen18vr.html", "content");
    } else if (key == 119) {
